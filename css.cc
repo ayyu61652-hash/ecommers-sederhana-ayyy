@@ -36,7 +36,7 @@ margin:20px;
 }
 
 .section-1 img{
-width:100%;
+width:20%;
 max-width:150px;
 height:150px;
 object-fit:cover;
