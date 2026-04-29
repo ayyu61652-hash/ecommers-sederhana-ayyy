@@ -1,130 +1,105 @@
-/* RESET */
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-/* BODY */
 body{
-    font-family: 'Poppins', sans-serif;
-    background:hsl(308, 49%, 79%);
-    color:#333;
+background:#f5f5f5;
 }
 
 /* HEADER */
+
 header{
-    background:#ff00dd;
-    text-align:center;
-    padding:30px 20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 5%;
+background:#ff69b4;
+color:white;
 }
 
-header h1{
-    font-size:42px;
-    color:white;
-    margin-bottom:10px;
-    letter-spacing:1px;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
 }
 
-header p{
-    color:white;
-    font-size:16px;
+/* BANNER */
+
+.section-1{
+display:flex;
+justify-content:center;
+margin:20px;
 }
 
-/* CONTAINER */
-.container{
-    width:90%;
-    margin:40px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+.section-1 img{
+width:100%;
+max-width:900px;
+height:300px;
+object-fit:cover;
+border-radius:15px;
 }
 
-/* CARD */
+/* JUDUL */
+
+.p-rekomendasi{
+text-align:center;
+margin:30px;
+font-size:2rem;
+}
+
+/* PRODUK */
+
+.produk-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px 5%;
+}
+
 .card{
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 6px 15px rgba(0,0,0,0.15);
-    transition:0.3s ease;
+background:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card:hover{
-    transform:translateY(-10px);
-}
-
-/* IMAGE */
 .card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
 }
 
-/* CONTENT */
-.card-content{
-    padding:20px;
-    text-align:center;
+.harga{
+color:#ff1493;
+font-weight:bold;
+margin:10px 0;
 }
 
-.card-content h2{
-    font-size:24px;
-    color:#d68ed3e8;
-    margin-bottom:10px;
-}
-
-/* PRICE */
-.price{
-    font-size:22px;
-    font-weight:bold;
-    color:#333;
-}
-
-.discount{
-    text-decoration:line-through;
-    color:rgb(250, 125, 239);
-    margin-right:8px;
-    font-size:16px;
-}
-
-/* BUTTON */
 button{
-    margin-top:18px;
-    padding:12px 24px;
-    border:none;
-    border-radius:30px;
-    background:#c960b2;
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.3s;
+background:#ff69b4;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
 }
 
 button:hover{
-    background:#e0a0b9;
-    transform:scale(1.05);
+background:#ff1493;
 }
 
 /* FOOTER */
+
 footer{
-    background:#f099e1;
-    text-align:center;
-    padding:18px;
-    color:white;
-    margin-top:40px;
-    font-size:14px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-
-    header h1{
-        font-size:32px;
-    }
-
-    .card img{
-        height:240px;
-    }
-
+text-align:center;
+padding:20px;
+margin-top:40px;
+background:#333;
+color:white;
 }
