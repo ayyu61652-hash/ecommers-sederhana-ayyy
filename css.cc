@@ -66,13 +66,16 @@ padding:15px;
 border-radius:10px;
 text-align:center;
 box-shadow:0 4px 8px rgba(0,0,0,0.1);
+max-width:220px;
+margin:auto;
 }
 
 .card img{
-width:100%;
-height:180px;
+width:120px;
+height:120px;
 object-fit:cover;
-border-radius:10px;
+display:block;
+margin:auto;
 }
 
 .harga{
