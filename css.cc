@@ -37,8 +37,8 @@ margin:20px;
 
 .section-1 img{
 width:100%;
-max-width:900px;
-height:300px;
+max-width:150px;
+height:150px;
 object-fit:cover;
 border-radius:15px;
 }
